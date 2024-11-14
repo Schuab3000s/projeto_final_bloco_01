@@ -13,7 +13,7 @@ public class RemedioController implements RemedioRepository {
 	@Override
 	public void listarTodos() {
 		for (var remedio : listaRemedio) {
-			remedio.visualizar();
+			remedio.visualizar(); 
 		}
 	}
 

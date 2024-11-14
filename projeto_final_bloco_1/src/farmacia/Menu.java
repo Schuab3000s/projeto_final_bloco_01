@@ -85,7 +85,7 @@ public class Menu {
 				case 1 -> clienteC.listarTodos();
 				case 2 -> remedioC.listarTodos();
 				}
-				break;
+				break; 
 			case 3:
 				System.out.println("\nDeletamento...");
 

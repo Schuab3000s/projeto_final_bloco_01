@@ -18,7 +18,7 @@ public class ClienteController implements ClienteRepository {
 
 	@Override
 	public void cadastrar(Cliente cliente) {
-		listaCliente.add(cliente);
+		listaCliente.add(cliente); 
 		System.out.println("\nCliente cadastrado com sucesso!!");
 
 	}
