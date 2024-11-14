@@ -29,7 +29,9 @@ public class Menu {
 			System.out.println("|_____________________________________________________|");
 			System.out.println("\nEntre com a opção desejada:");
 
-			opcao = sc.nextInt();
+			do {
+				opcao = sc.nextInt();
+			} while (opcao <= 0 && opcao > 9);
 
 			switch (opcao) {
 			case 9:
