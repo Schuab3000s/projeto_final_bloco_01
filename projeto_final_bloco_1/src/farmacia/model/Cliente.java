@@ -55,4 +55,14 @@ public class Cliente {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
+
+	public void visualizar() {
+		System.out.println("---> Dados da conta <---");
+		System.out.println("Nome: " + this.nome);
+		System.out.println("Idade: " + this.idade);
+		System.out.println("CPF: " + this.cpf);
+		System.out.println("Celular: " + this.celular);
+		System.out.println("Endereço: " + this.endereco);
+		System.out.println("------------------------");
+	}
 }

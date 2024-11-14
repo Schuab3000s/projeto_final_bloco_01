@@ -1,14 +1,12 @@
 package farmacia.model;
 
-import java.time.LocalDate;
-
 public class Remedio {
 
 	private String nome;
 	private int codigo;
-	private LocalDate dataValidade;
+	private String dataValidade;
 
-	public Remedio(String nome, int codigo, LocalDate dataValidade) {
+	public Remedio(String nome, int codigo, String dataValidade) {
 		this.nome = nome;
 		this.codigo = codigo;
 		this.dataValidade = dataValidade;
@@ -30,12 +28,19 @@ public class Remedio {
 		this.codigo = codigo;
 	}
 
-	public LocalDate getDataValidade() {
+	public String getDataValidade() {
 		return dataValidade;
 	}
 
-	public void setDataValidade(LocalDate dataValidade) {
+	public void setDataValidade(String dataValidade) {
 		this.dataValidade = dataValidade;
 	}
 
+	public void visualizar() {
+		System.out.println("---> Dados da conta <---");
+		System.out.println("Nome: " + this.nome);
+		System.out.println("Código: " + this.codigo);
+		System.out.println("Validade: " + this.dataValidade);
+		System.out.println("------------------------");
+	}
 }
